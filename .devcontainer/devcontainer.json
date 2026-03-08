@@ -1,0 +1,7 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "image": "golang:1.24-bookworm",
+  "runArgs": [ "--name", "${localWorkspaceFolderBasename}" ],
+  "forwardPorts": [ 11434 ],
+  "postCreateCommand": "go mod download"
+}
